@@ -18,8 +18,10 @@ const game = new Phaser.Game(config)
 
 function preload () {
 	// 加載遊戲資源
+	this.load.image("main-bg", "../assets/images/bg/main-bg.png")
 }
 
 function create () {
 	// 初始化遊戲場景
+	this.add.image(gameWidth / 2, gameHeight / 2, "main-bg")
 }
